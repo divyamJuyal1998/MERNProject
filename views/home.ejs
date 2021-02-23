@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>My html document</title>
+    <link rel = "stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script type="text/javascript">
+    function change()
+    {
+
+        var para=document.getElementsByTagName("p");
+        para[0].style.fontsize=65;
+        para[1].style.color="green";
+        para[2].style.fontWeight="bold";
+    
+    }
+    
+    
+    </script>
+   
+</head>
+<body>
+    <h2>
+       
+        <%= data.name %>
+        <%= data.status %>
+    </h2>
+<p>This is paragraph 1</p>
+<p>This is paragraph 2</p>
+<p>This is paragraph 3</p>
+<p>This is paragraph 4</p>
+<p>This is paragraph 5</p>
+<p>This is paragraph 6</p>
+<br>
+
+
+<button onclick="change()">Click me</button>
+</body>
+
+
+
+
+</html>
